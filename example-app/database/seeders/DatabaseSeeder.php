@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        Tweet::factory()->count(10)->create();
+        $this->call([
+            UsersSeeder::class,
+            TweetsSeeder::class,
+        ]);
     }
 }
