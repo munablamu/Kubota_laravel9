@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Modules\ImageUpload\CloudinaryImageManagr;
+use App\Modules\ImageUpload\CloudinaryImageManager;
 use App\Modules\ImageUpload\ImageManagerInterface;
 use App\Modules\ImageUpload\LocalImageManager;
 use Cloudinary\Cloudinary;
