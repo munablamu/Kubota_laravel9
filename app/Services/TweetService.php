@@ -12,9 +12,7 @@ use App\Modules\ImageUpload\ImageManagerInterface;
 class TweetService
 {
     public function __construct(private ImageManagerInterface $imageManager)
-    {
-        //
-    }
+    {}
 
     public function getTweets()
     {
