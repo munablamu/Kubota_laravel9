@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(Cloudinry::class, function() {
+        $this->app->bind(Cloudinary::class, function() {
             return new Cloudinary([
                 'cloud' => [
                     'cloud_name' => config('cloudinary.cloud_name'),

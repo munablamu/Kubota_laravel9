@@ -21,7 +21,7 @@ class TweetServiceTest extends TestCase
             'user_id' => 1
         ]);
 
-        $imageManager = Mockery::mock(ImageManagerInterFace::class);
+        $imageManager = Mockery::mock(ImageManagerInterface::class);
         $tweetService = new TweetService($imageManager);
 
         $result = $tweetService->checkOwnTweet(1, 1);
